@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html data-theme="cupcake" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Padda Paribahan</title>
+  </head>
+
+  <body class="h-full">
+    <div id="main">
+      <nav class="flex w-11/12 mx-auto justify-between items-center py-4">
+        <div>
+          <h1 class="text-2xl font-bold">P-Ticket</h1>
+        </div>
+        <div>
+          <ul
+            class="md:flex hidden cursor-pointer justify-center space-x-10 items-center gap-x-3 text-gray-700"
+          >
+            <li>Home</li>
+            <li>About</li>
+            <li>Destination</li>
+            <li>Search</li>
+          </ul>
+        </div>
+        <!-- bus-btn -->
+        <button
+          class="flex justify-center items-center gap-2 px-3 py-1 border text-green-500 font-bold border-green-400 bg-green-300 bg-opacity-20 rounded-md"
+        >
+          Bus <img src="./images/bus-icon.png" alt="" />
+        </button>
+      </nav>
+    
+      <div>
+        <div
+          class="flex -z-10 bg-cover bg-center w-full h-[70vh]"
+          style="background-image: url('./images/banner.png')"
+        >
+          <div class="flex items-center w-11/12 mx-auto flex-row justify-center ">
+            <div class="text-center space-y-4">
+              <h2
+                class="text-2xl md:text-4xl font-bold text-white"
+              >
+                End-to-End Travel with
+              </h2>
+              <h2
+                class="text-2xl md:text-4xl font-bold text-green-500"
+              >P Paribahan 
+            </h2>
+
+              <p
+                class="mt-4 w-[90%] md:w-[70%] text-sm md:text-lg mx-auto text-white"
+              >
+                P-Ticket: You can buy ticket safely here.It is reliable, and hassle-free
+                ticketing experience for you sir."
+              </p>
+
+              <a
+                class="my-2 md:my-4 inline-block px-3 py-1 md:px-6 md:py-3 cursor-pointer bg-green-500 font-bold rounded"
+                href="#section2"
+                >Buy Tickets</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- 3 logos container -->
+        <div class="md:flex hidden w-11/12 mx-auto -mt-9 justify-around z-10">
+          <div
+            class="flex bg-white items-center gap-1 px-4 py-2 rounded-xl border-b-2 border-b-green-400"
+          >
+            <div><img src="./images/people.png" alt="" /></div>
+            <div>
+              <h1 class="font-bold text-3xl">500k+</h1>
+              <p class="text-sm">Registered users</p>
+            </div>
+          </div>
+          <div
+            class="flex items-center bg-white gap-1 px-4 py-2 rounded-xl border-b-2 border-b-green-400"
+          >
+            <div><img src="./images/ticket-cupon.png" alt="" /></div>
+            <div>
+              <h1 class="font-bold text-3xl">1.7 lacks</h1>
+              <p class="text-sm">Ticket sold</p>
+            </div>
+          </div>
+          <div
+            class="flex items-center bg-white gap-1 px-4 py-2 rounded-xl border-b-2 border-b-green-400"
+          >
+            <div><img src="./images/stoppage.png" alt="" /></div>
+            <div>
+              <h1 class="font-bold text-3xl">80k+</h1>
+              <p class="text-sm">Rental Partner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div
+        class="flex gap-y-3 flex-col md:flex-row md:gap-y-0 items-center justify-between my-16 w-11/12 mx-auto "
+      >
+        <div
+          class="flex w-[95%] py-4 md:py-0 md:w-[49%] items-center md:justify-around justify-center px-8 rounded-xl bg-yellow-400"
+        >
+          <div
+            class="border-r md:border-r-0 border-r-gray-600 border-dashed pr-1 md:pr-0 mr-2 md:mr-0"
+          >
+            <h1 class="font-bold text-3xl">15% OFF</h1>
+            <p class="font-bold mt-2">
+              on your next purchase <br />
+              <span class="font-thin">use by February 2024</span>
+            </p>
+          </div>
+          <div class="hidden md:block">
+            <img 1class=" " src="./images/cupon-devider.png" alt="" />
+          </div>
+
+          <div>
+            <h1 class="font-bold text-3xl">NEW15</h1>
+            <p class="font-thin mt-2">Coupon Code</p>
+          </div>
+        </div>
+        <div
+          class="flex w-[95%] py-4 md:py-0 md:w-[49%] md:justify-around justify-center  items-center px-8 rounded-xl bg-pink-400"
+        >
+          <div
+            class="border-r md:border-r-0 border-r-gray-600 border-dashed pr-1 md:pr-0 mr-2 md:mr-0"
+          >
+            <h1 class="font-bold text-3xl">20% OFF</h1>
+            <p class="font-bold mt-2">
+              on your next purchase <br />
+              <span class="font-thin">use by February 2024</span>
+            </p>
+          </div>
+          <div class="hidden md:block">
+            <img src="./images/cupon-devider.png" alt="" />
+          </div>
+          <div>
+            <h1 class="font-bold text-3xl">Couple 20</h1>
+            <p class="font-thin mt-2">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center mb-14">
+        <button
+          class="flex justify-center items-center gap-2 px-3 py-1 border text-green-500 font-bold border-green-400 bg-green-300 bg-opacity-20 rounded-md"
+        >
+          See All Offer
+        </button>
+      </div>
+      
+      <div
+        id="section1"
+        class="border-t-2 bg-gray-200 rounded-2xl border-t-green-500"
+      >
+        <div class="py-16">
+          <div class="mb-6 mx-auto w-11/12">
+            <h1 class="text-center text-2xl font-bold">Padda Paribahan</h1>
+            <p class="text-center w-[70%] mx-auto font-thin">
+              Your trusted ticket counter for best travel experiences
+            </p>
+          </div>
+          <div
+            class="flex gap-2 mx-auto w-11/12 rounded-xl py-2 md:py-0 px-4 bg-white"
+          >
+            <div class="flex flex-col justify-evenly md:w-[73%] w-[100%]">
+              <div class="flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                  <div>
+                    <img width="50px" src="./images/bus-logo.png" alt="" />
+                  </div>
+                  <p class="font-bold text-sm">
+                    Padda Paribahan <br />
+                    <span class="font-thin">Coach-009-WEB ! Echonomy</span>
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="flex items-center gap-2 border-green-500 font-semibold bg-green-200 text-green-400 px-2 py-1 rounded-md bg-opacity-70"
+                  >
+                    <img src="./images/bus-icon.png" alt="" />
+                    <p id="leftNumbersOfSeat">40 Seats Left</p>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex flex-col justify-center gap-2 mt-1 bg-gray-100 p-3 rounded-lg"
+              >
+                <div class="flex items-center justify-between">
+                  <h1>Route</h1>
+                  <p class="font-semibold">Dhaka-Sylhet</p>
+                </div>
+                <div class="h-[1px] border-t border-t-gray-400"></div>
+                <div class="flex items-center justify-between">
+                  <h1>Departer Time</h1>
+                  <p class="font-semibold">9:00 PM</p>
+                </div>
+                <div class="h-[1px] border-t border-t-gray-400"></div>
+                <div class="flex justify-between items-center">
+                  <button class="bg-gray-200 text-sm md:text-md p-1 rounded-md">
+                    Boarding Point - Laxmipur
+                  </button>
+                  <button class="bg-gray-200 text-sm md:text-md p-1 rounded-md">
+                    Dropping Point - Bogura
+                  </button>
+                  <button
+                    class="bg-gray-200 text-sm md:text-md hidden md:block p-1 rounded-md"
+                  >
+                    Est. Time - 11 Hour
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="h-[300px] hidden md:flex w-[5%]">
+              <img class="h-full" src="./images/info-devider.png" alt="" />
+            </div>
+            <div
+              class="hidden md:flex flex-col justify-center items-center w-[20%]"
+            >
+              <div><img src="./images/fare.png" alt="" /></div>
+              <h1 class="font-bold">550 Taka</h1>
+              <p class="text-sm">Per Seat</p>
+            </div>
+          </div>
+          
+          <div
+            id="section2"
+            class="bg-white w-11/12 flex flex-col md:flex-row gap-2 mx-auto mt-8 rounded-xl px-4 py-4"
+          >
+            <!-- left section -->
+            <div
+              class="w-full md:w-[65%] md:border-r border-r-0 border-dashed pr-2"
+            >
+              <h1 class="font-bold">Select Your Seat</h1>
+              <div class="h-[1px] my-2 border-t border-t-gray-200"></div>
+
+              <div>
+                <div class="flex justify-between items-center">
+                  <div class="flex gap-1 justify-between items-center">
+                    <img class="w-[20px]" src="./images/seat-gray.png" alt="" />
+                    <p class="font-semibold">Available</p>
+                  </div>
+
+                  <div class="flex justify-between gap-1 items-center">
+                    <img
+                      class="w-[20px]"
+                      src="./images/seat-green.png"
+                      alt=""
+                    />
+                    <p class="font-semibold text-green-400">Selected</p>
+                  </div>
+                </div>
+                <div class="h-[1px] my-2 border-t border-t-gray-400"></div>
+                <div class="flex justify-end">
+                  <button
+                    class="bg-gray-300 flex justify-center items-center rounded-md px-6 py-2 border-black"
+                  >
+                    <img
+                      class="w-[20px]"
+                      src="./images/steering-wheel.png"
+                      alt=""
+                    />
+                  </button>
+                </div>
+              </div>
+              <div>
+                <div class="flex w-full items-center justify-between my-2">
+                  <div class="p-2 w-[10%] bg-white rounded-lg">A</div>
+                  <div class="flex w-[90%] justify-between">
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('A1')"
+                        id="A1 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        A1
+                      </button>
+                      <button
+                        onclick="addToCart('A2')"
+                        id="A2 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        A2
+                      </button>
+                    </div>
+                    <div class="w-[20%]"></div>
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('A3')"
+                        id="A3 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        A3
+                      </button>
+                      <button
+                        onclick="addToCart('A4')"
+                        id="A4 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        A4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex w-full items-center justify-between my-2">
+                  <div class="p-2 w-[10%] bg-white rounded-lg">B</div>
+                  <div class="flex w-[90%] justify-between">
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('B1')"
+                        id="B1 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        B1
+                      </button>
+                      <button
+                        onclick="addToCart('B2')"
+                        id="B2 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        B2
+                      </button>
+                    </div>
+                    <div class="w-[20%]"></div>
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('B3')"
+                        id="B3 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        B3
+                      </button>
+                      <button
+                        onclick="addToCart('B4')"
+                        id="B4 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        B4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex w-full items-center justify-between my-2">
+                  <div class="p-2 w-[10%] bg-white rounded-lg">C</div>
+                  <div class="flex w-[90%] justify-between">
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('C1')"
+                        id="C1 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        C1
+                      </button>
+                      <button
+                        onclick="addToCart('C2')"
+                        id="C2 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        C2
+                      </button>
+                    </div>
+                    <div class="w-[20%]"></div>
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('C3')"
+                        id="C3 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        C3
+                      </button>
+                      <button
+                        onclick="addToCart('C4')"
+                        id="C4 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        C4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex w-full items-center justify-between my-2">
+                  <div class="p-2 w-[10%] bg-white rounded-lg">D</div>
+                  <div class="flex w-[90%] justify-between">
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('D1')"
+                        id="D1 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        D1
+                      </button>
+                      <button
+                        onclick="addToCart('D2')"
+                        id="D2 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        D2
+                      </button>
+                    </div>
+                    <div class="w-[20%]"></div>
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('D3')"
+                        id="D3 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        D3
+                      </button>
+                      <button
+                        onclick="addToCart('D4')"
+                        id="D4 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        D4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex w-full items-center justify-between my-2">
+                  <div class="p-2 w-[10%] bg-white rounded-lg">E</div>
+                  <div class="flex w-[90%] justify-between">
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('E1')"
+                        id="E1 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        E1
+                      </button>
+                      <button
+                        onclick="addToCart('E2')"
+                        id="E2 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        E2
+                      </button>
+                    </div>
+                    <div class="w-[20%]"></div>
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('E3')"
+                        id="E3 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        E3
+                      </button>
+                      <button
+                        onclick="addToCart('E4')"
+                        id="E4 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        E4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex w-full items-center justify-between my-2">
+                  <div class="p-2 w-[10%] bg-white rounded-lg">F</div>
+                  <div class="flex w-[90%] justify-between">
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('F1')"
+                        id="F1 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        F1
+                      </button>
+                      <button
+                        onclick="addToCart('F2')"
+                        id="F2 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        F2
+                      </button>
+                    </div>
+                    <div class="w-[20%]"></div>
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('F3')"
+                        id="F3 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        F3
+                      </button>
+                      <button
+                        onclick="addToCart('F4')"
+                        id="F4 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        F4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex w-full items-center justify-between my-2">
+                  <div class="p-2 w-[10%] bg-white rounded-lg">G</div>
+                  <div class="flex w-[90%] justify-between">
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('G1')"
+                        id="G1 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        G1
+                      </button>
+                      <button
+                        onclick="addToCart('G2')"
+                        id="G2 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        G2
+                      </button>
+                    </div>
+                    <div class="w-[20%]"></div>
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('G3')"
+                        id="G3 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        G3
+                      </button>
+                      <button
+                        onclick="addToCart('G4')"
+                        id="G4 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        G4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex w-full items-center justify-between my-2">
+                  <div class="p-2 w-[10%] bg-white rounded-lg">H</div>
+                  <div class="flex w-[90%] justify-between">
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('H1')"
+                        id="H1 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        H1
+                      </button>
+                      <button
+                        onclick="addToCart('H2')"
+                        id="H2 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        H2
+                      </button>
+                    </div>
+                    <div class="w-[20%]"></div>
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('H3')"
+                        id="H3 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        H3
+                      </button>
+                      <button
+                        onclick="addToCart('H4')"
+                        id="H4 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        H4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex w-full items-center justify-between my-2">
+                  <div class="p-2 w-[10%] bg-white rounded-lg">I</div>
+                  <div class="flex w-[90%] justify-between">
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('I1')"
+                        id="I1 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        I1
+                      </button>
+                      <button
+                        onclick="addToCart('I2')"
+                        id="I2 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        I2
+                      </button>
+                    </div>
+                    <div class="w-[20%]"></div>
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('I3')"
+                        id="I3 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-6 py-2"
+                      >
+                        I3
+                      </button>
+                      <button
+                        onclick="addToCart('I4')"
+                        id="I4 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        I4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex w-full items-center justify-between my-2">
+                  <div class="p-2 w-[10%] bg-white rounded-lg">J</div>
+                  <div class="flex w-[90%] justify-between">
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('J1')"
+                        id="J1 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        J1
+                      </button>
+                      <button
+                        onclick="addToCart('J2')"
+                        id="J2 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        J2
+                      </button>
+                    </div>
+                    <div class="w-[20%]"></div>
+                    <div class="flex justify-between w-[40%]">
+                      <button
+                        onclick="addToCart('J3')"
+                        id="J3 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        J3
+                      </button>
+                      <button
+                        onclick="addToCart('J4')"
+                        id="J4 seat"
+                        class="bg-gray-100 flex justify-center items-center rounded-md px-4 py-1 md:px-6 md:py-2"
+                      >
+                        J4
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- right section -->
+            <div class="md:w-[33%] w-full">
+              <h1 class="font-bold">Select Your Seat</h1>
+              <div
+                class="h-[1px] my-2 border-t border-dashed border-t-gray-200"
+              ></div>
+              <!-- cart section -->
+              <div class="bg-gray-100 px-2 py-4 my-4 flex flex-col gap-y-2">
+                <div class="flex items-center justify-between">
+                  <h1 class="font-bold relative">
+                    Seat
+                    <p
+                      id="totalSeat"
+                      class="bg-green-600 absolute -top-2 -right-5 flex justify-center text-white items-center h[17px] w-[17px] rounded-full"
+                    >
+                      0
+                    </p>
+                  </h1>
+                  <h1 class="font-bold">Class</h1>
+                  <h1 class="font-bold">Price</h1>
+                </div>
+                <div
+                  class="h-[1px] my-2 border-t border-dashed border-t-gray-200"
+                ></div>
+                <div id="cart">
+                  <!-- have to push here -->
+                </div>
+
+                <div class="h-[1px] my-2 border-t border-t-gray-200"></div>
+                <div class="flex flex-col gap-y-3">
+                  <div class="flex justify-between font-semibold">
+                    <h1>Total Price</h1>
+                    <h1 id="totalPrice">BDT 0</h1>
+                  </div>
+                  <div
+                    id="discountContainer"
+                    class="justify-between font-semibold hidden"
+                  >
+                    <h1>Discount</h1>
+                    <h1 id="discount">BDT 0</h1>
+                  </div>
+                  <div id="cuponContainer" class="flex items-center w-full">
+                    <input
+                      id="cupon"
+                      placeholder="Have any coupon ?"
+                      class="outline-none rounded-l-md w-full py-2 px-2"
+                      type="text"
+                    />
+                    <button
+                      onclick="cuponHandler()"
+                      id="Button"
+                      class="px-3 rounded-r-md py-2 bg-green-500"
+                    >
+                      Apply
+                    </button>
+                  </div>
+                  <div class="flex justify-between font-semibold">
+                    <h1>Grand Total</h1>
+                    <h1 id="grandTotal">BDT 0</h1>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="flex flex-col space-y-2">
+                  <div>
+                    <label class="font-bold" for="name"
+                      >Passenger Name<sup>*</sup></label
+                    >
+                    <br />
+                    <input
+                      class="outline-none mt-1 border rounded-md w-full py-2 px-2"
+                      type="text"
+                      placeholder="Enter your name..."
+                    />
+                  </div>
+                  <div>
+                    <label class="font-bold" for="name"
+                      >Phone Number<sup>*</sup></label
+                    >
+                    <br />
+                    <input
+                      id="number"
+                      class="outline-none mt-1 border rounded-md w-full py-2 px-2"
+                      type="number"
+                      placeholder="Enter your phone number..."
+                    />
+                  </div>
+                  <div>
+                    <label class="font-bold" for="name"
+                      >Email ID<sup>*</sup></label
+                    >
+                    <br />
+                    <input
+                      class="outline-none mt-1 border rounded-md w-full py-2 px-2"
+                      type="email"
+                      placeholder="Enter your email id..."
+                    />
+                  </div>
+
+                  <button
+                    onclick="testHandler()"
+                    id="finalSubmit"
+                    class="bg-green-500 rounded-md mt-2 font-bold text-white w-full py-2"
+                  >
+                    Next
+                  </button>
+                </div>
+                <div
+                  class="flex justify-evenly text-gray-600 font-thin underline my-2 text-sm"
+                >
+                  <p>Terms and Conditions</p>
+                  <p>Cancellation Policy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="bg-black text-white py-10">
+        <div class="w-11/12 mx-auto flex justify-between items-center">
+          <div>
+            <h1 class="font-bold text-2xl">P-Ticket</h1>
+            <p class="font-thin text-gray-200 mt-2">
+              P-Ticket is a digital platform to make your daily commuting
+              better.
+            </p>
+          </div>
+          <div class="md:block hidden">
+            <h1 class="text-lg mb-2">Download our App</h1>
+            <button class="flex gap-3 border px-3 rounded-md py-1 items-center">
+              <img src="./images//playstore.png" alt="" />
+              <p class="text-left">
+                Get It On
+                <br />
+                <span>Google Play</span>
+              </p>
+            </button>
+          </div>
+        </div>
+        <div class="border-dotted border h-[0.5px] mx-auto my-10 w-11/12"></div>
+        <div
+          class="w-11/12 mx-auto flex flex-col md:flex-row gap-2 justify-between items-center"
+        >
+          <div>
+            <p>@All rights reserved, P-Ticket services limited.2024</p>
+          </div>
+          <div>
+            <ul class="flex text-gray-400 items-center gap-2">
+              <li>Terms and Conditions</li>
+              <li>Refund Policy</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div
+      id="modal"
+      style="display: none"
+      class="flex justify-center items-centers mt-[7rem] h-full"
+    >
+      <div
+        class="bg-white flex flex-col items-center py-12 px-8 text-center gap-y-6 w-[70%] mx-auto"
+      >
+        <div><img src="./images/success.png" alt="" /></div>
+        <div>
+          <h1 class="text-xl font-bold text-green-500">Success</h1>
+        </div>
+        <div>
+          <p class="font-semibold w-full md:w-11/12 mx-auto mb-2">
+            Thank you for Booking Our Bus Seats. We are working hard to find the
+            best service and deals for you.
+          </p>
+          <p class="font-thin w-full md:w-11/12">
+            Shortly you will find a confirmation in your email.
+          </p>
+        </div>
+        <div class="w-[60%]">
+          <button
+            class="text-white md:w-[60%] w-full py-2 rounded-3xl text-lg bg-green-600"
+          >
+            <a href="./index.html">Continue</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
